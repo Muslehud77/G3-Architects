@@ -1,6 +1,5 @@
 body{
     font-family: 'Work Sans', sans-serif;
-    margin: 0;
 }
 .hide{
     display: none;
@@ -88,14 +87,53 @@ main {
     gap: 1.5rem;
 }
 .teams-contents{
-    
-    padding: 70px;
+     padding: 70px;
+}
+
+/* facts style */
+
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+.card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.facts-card-container.card-title{
+    margin: 5px;
+    font-size: 1.25rem;
+}
+/* sponsors  */
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
 }
 
 
+
+
 /* responsive */
+
+
+
+
+
 @media screen and (max-width: 576px) {
-    /* header banner */
+    /* header banner responsive*/
     header{
         padding: 5px 20px;
     }
@@ -107,7 +145,7 @@ main {
     }
     nav li a{   
     font-size: 1em;}
-    /* teams  */
+    /* teams  responsive*/
     .teams-container{
         flex-direction: column-reverse;
     }
@@ -121,9 +159,32 @@ main {
    padding: 0px 50px;
 }
 
+/* facts responsive */
+.facts-card-container{
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+}
+.facts-head{
+    padding: 0 20px;
+
 }
 
-
+/* sponsors responsive */
+.sponsors{
+    padding: 0 10px;
+}
+.sponsors-img-container{
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    
+}
+.sponsors-img-container>img{
+    height: 15%;
+    width: 15%;
+}
+}
 /* tablet or medium devices */
 
 @media screen and (min-width: 576px) and (max-width: 960px){
@@ -148,8 +209,35 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 20px;
+    padding: 15px;
+}
+.teams-img-container>img{
+    height: 100%;
+    width: 100%;
 }
 .teams-contents{
    padding: 0px 50px;
+}
+/* facts  */
+.facts-card-container{
+    justify-content: space-around;
+    gap: 20px;
+}
+.facts-head{
+    padding: 0 20px;
+}
+/* sponsors responsive */
+.sponsors{
+    padding: 0 10px;
+}
+.sponsors-img-container{
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+    
+}
+.sponsors-img-container>img{
+    height: 15%;
+    width: 15%;
 }
 }
