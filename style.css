@@ -122,6 +122,13 @@ main {
     margin-top: 50px;
     align-items: center;
 }
+/* footer  */
+footer{
+    background-color: #FFF4E6;
+    text-align: center;
+    margin: 240px 240px 100px 240px;
+    padding: 39px 410px;
+}
 
 
 
@@ -184,6 +191,13 @@ main {
     height: 15%;
     width: 15%;
 }
+/* footer  */
+footer{
+    background-color: #FFF4E6;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 20px;
+}
 }
 /* tablet or medium devices */
 
@@ -239,5 +253,12 @@ main {
 .sponsors-img-container>img{
     height: 15%;
     width: 15%;
+}
+/* footer  */
+footer{
+    background-color: #FFF4E6;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 20px;
 }
 }
